@@ -238,6 +238,115 @@ input:focus, select:focus {
   text-align: center;
   font-size: 1.1rem;
 }
+/* Carousel */
+.carousel-section {
+  max-width: 800px;
+  margin: 2.5rem auto 2rem auto;
+  position: relative;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.carousel-slide {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  opacity: 0;
+  transition: opacity 0.6s;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 0; right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 3;
+  pointer-events: none;
+}
+.carousel-controls button {
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  pointer-events: all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.carousel-controls button:hover {
+  background: #007bff;
+}
+
+/* Galerie d'images */
+.gallery-section {
+  max-width: 900px;
+  margin: 2.5rem auto 2rem auto;
+  text-align: center;
+}
+.gallery-section h2 {
+  margin-bottom: 1.5rem;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+.gallery img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.2s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Carte Leaflet */
+.map-section {
+  max-width: 900px;
+  margin: 2.5rem auto 2rem auto;
+  text-align: center;
+}
+.map-section h2 {
+  margin-bottom: 1.2rem;
+}
+#map {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 320px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
 @media (max-width: 900px) {
   nav ul {
     display: none;
@@ -253,6 +362,20 @@ input:focus, select:focus {
     flex-direction: column;
     align-items: flex-start;
     padding: 2rem 1rem 1rem 1rem;
+  }
+  .carousel-section, .gallery-section, .map-section {
+    max-width: 98vw;
+  }
+  .carousel {
+    height: 200px;
+  }
+  #map {
+    height: 200px;
+  }
+  .gallery img {
+    width: 45vw;
+    min-width: 120px;
+    height: 90px;
   }
 }
 @media (max-width: 600px) {
