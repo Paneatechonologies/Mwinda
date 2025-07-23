@@ -10,10 +10,16 @@ $(document).ready(function() {
   // Formulaire de réservation
   $('#reservationForm').on('submit', function(e) {
     e.preventDefault();
-    $('#confirmation').fadeIn();
+    Swal.fire({
+      icon: 'success',
+      title: 'Réservation envoyée !',
+      text: 'Merci ! Un chauffeur vous contactera rapidement.',
+      confirmButtonText: 'OK',
+      customClass: {
+        confirmButton: 'btn-main'
+      },
+      buttonsStyling: false
+    });
     this.reset();
-    setTimeout(function() {
-      $('#confirmation').fadeOut();
-    }, 5000);
   });
 }); 
