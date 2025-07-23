@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #111;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: color 0.2s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav a:hover {
+  color: #007bff;
+}
+.menu-toggle {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1002;
+  font-size: 2rem;
+  color: #111;
+}
+.menu-toggle .fa-bars {
+  font-size: 2rem;
+  color: #111;
+}
+.hero {
+  text-align: center;
+  padding: 4rem 1rem 2rem 1rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.btn-main {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-main:hover {
+  background: #007bff;
+}
+.how-it-works {
+  background: #f7f7f7;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.step {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 2rem 1.5rem;
+  width: 220px;
+  min-width: 180px;
+}
+.step-number {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  margin-bottom: 1rem;
+}
+.drawer {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 240px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.08);
+  z-index: 1001;
+  transition: left 0.3s;
+  padding: 2rem 1.2rem 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.drawer.open {
+  left: 0;
+}
+.drawer ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.drawer a {
+  color: #111;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+.close-drawer {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #111;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.socials {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+.social-link {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-link:hover {
+  color: #007bff;
+}
+footer {
+  background: #111;
+  color: #fff;
+  padding: 2rem 2rem 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+footer h4 {
+  margin-top: 0;
+}
+footer p {
+  margin: 0.5rem 0 0 0;
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #bbb;
+}
+.reservation-section {
+  max-width: 420px;
+  margin: 3rem auto 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 2rem 1.5rem;
+}
+.reservation-section h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.form-group {
+  margin-bottom: 1.3rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+input, select {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fafafa;
+  transition: border 0.2s;
+}
+input:focus, select:focus {
+  border: 1.5px solid #007bff;
+  outline: none;
+}
+.confirmation-message {
+  background: #e6ffe6;
+  color: #1a7f1a;
+  border: 1px solid #b2ffb2;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+@media (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  header, .reservation-section {
+    padding: 1rem;
+  }
+  .step {
+    width: 90%;
+    min-width: unset;
+  }
+  .reservation-section {
+    margin: 1.5rem 0.5rem;
+  }
+} 
