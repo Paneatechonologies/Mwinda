@@ -40,7 +40,7 @@ le site a été hebergé sur Github page
 3. Remplissez et validez : une alerte de confirmation s’affiche.
 
 ## Auteur
-- Panea technologies
+- [Panea technologies](https://github.com/Paneatechonologies)
 
 ---
 
