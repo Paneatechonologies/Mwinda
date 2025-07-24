@@ -1,14 +1,27 @@
+<<<<<<< HEAD
 $(document).ready(function() {
   // Drawer menu mobile
   $('.menu-toggle').on('click', function() {
     $('#drawer').addClass('open');
   });
   $('.close-drawer, #drawer a').on('click', function() {
+=======
+$(document).ready(function () {
+  // Drawer menu mobile
+  $('.menu-toggle').on('click', function () {
+    $('#drawer').addClass('open');
+  });
+  $('.close-drawer, #drawer a').on('click', function () {
+>>>>>>> 30e6733 (commit après mis a jour)
     $('#drawer').removeClass('open');
   });
 
   // Formulaire de réservation
+<<<<<<< HEAD
   $('#reservationForm').on('submit', function(e) {
+=======
+  $('#reservationForm').on('submit', function (e) {
+>>>>>>> 30e6733 (commit après mis a jour)
     e.preventDefault();
     if (typeof Swal !== 'undefined') {
       Swal.fire({
@@ -45,8 +58,13 @@ $(document).ready(function() {
   $('.carousel-prev').on('click', prevSlide);
   let carouselInterval = setInterval(nextSlide, 4000);
   $('#carousel').hover(
+<<<<<<< HEAD
     function() { clearInterval(carouselInterval); },
     function() { carouselInterval = setInterval(nextSlide, 4000); }
+=======
+    function () { clearInterval(carouselInterval); },
+    function () { carouselInterval = setInterval(nextSlide, 4000); }
+>>>>>>> 30e6733 (commit après mis a jour)
   );
 
   // Initialiser la carte Leaflet
@@ -59,4 +77,11 @@ $(document).ready(function() {
       .bindPopup('Mwinda - Kinshasa')
       .openPopup();
   }
+<<<<<<< HEAD
+=======
+
+  
+
+
+>>>>>>> 30e6733 (commit après mis a jour)
 }); 

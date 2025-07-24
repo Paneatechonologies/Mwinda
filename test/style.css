@@ -390,3 +390,53 @@ input:focus, select:focus {
     margin: 1.5rem 0.5rem;
   }
 } 
+<<<<<<< HEAD
+=======
+
+.download-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f8f8f8;
+  border-top: 2px solid #ddd;
+}
+
+.download-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.download-section p {
+  margin: 0.5em 0 1.5em;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn-download, .btn-copy {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.btn-copy {
+  background: #28a745;
+}
+
+.btn-download:hover {
+  background: #0056b3;
+}
+
+.btn-copy:hover {
+  background: #1e7e34;
+}
+>>>>>>> 30e6733 (commit après mis a jour)

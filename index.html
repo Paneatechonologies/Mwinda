@@ -68,6 +68,18 @@
       <h2>Nous localiser</h2>
       <div id="map" style="height: 320px; border-radius: 12px; overflow: hidden;"></div>
     </section>
+    <!-- Section de téléchargement -->
+    <section class="download-section">
+      <h2>Téléchargez l'application mobile</h2>
+      <p>Disponible dès maintenant pour Android !</p>
+      <div class="download-buttons">
+        <a href="downloads/app-release.apk" class="btn-download" download>Télécharger l’APK</a>
+        <button class="btn-copy" onclick="copyDownloadLink()">Copier le lien</button>
+      </div>
+      <p id="copy-msg" style="display:none; color:green;">Lien copié</p>
+    </section>
+
+
     <section class="how-it-works">
       <h2>Comment ça marche ?</h2>
       <div class="steps">
@@ -105,5 +117,18 @@
     </div>
     <div class="copyright">&copy; 2024 Mwinda. Tous droits réservés.</div>
   </footer>
+  <script>
+    function copyDownloadLink() {
+    const url = window.location.origin + "downloads/app-release.apk";
+    navigator.clipboard.writeText(url).then(() => {
+      document.getElementById('copy-msg').style.display = 'block';
+      setTimeout(() => {
+        document.getElementById('copy-msg').style.display = 'none';
+      }, 2000);
+    });
+  }
+  </script>
+
 </body>
-</html> 
+
+</html>
