@@ -390,53 +390,69 @@ input:focus, select:focus {
     margin: 1.5rem 0.5rem;
   }
 } 
-<<<<<<< HEAD
-=======
 
 .download-section {
-  text-align: center;
   padding: 40px 20px;
-  background: #f8f8f8;
-  border-top: 2px solid #ddd;
+  background: #f4f4f4;
+  text-align: center;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 800px;
 }
 
 .download-section h2 {
-  font-size: 2em;
+  font-size: 2rem;
   margin-bottom: 10px;
+  color: #222;
 }
 
 .download-section p {
-  margin: 0.5em 0 1.5em;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
 }
 
-.download-buttons {
+.download-actions {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-.btn-download, .btn-copy {
-  background: #007bff;
-  color: white;
-  border: none;
+.download-btn,
+.copy-btn {
   padding: 12px 20px;
-  border-radius: 6px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00a86b;
+  color: white;
+  font-size: 1rem;
   cursor: pointer;
+  transition: background 0.3s ease;
   text-decoration: none;
-  font-size: 1em;
-  transition: background 0.3s;
 }
 
-.btn-copy {
-  background: #28a745;
+.download-btn:hover,
+.copy-btn:hover {
+  background-color: #008f5c;
 }
 
-.btn-download:hover {
-  background: #0056b3;
+.confirmation-text {
+  margin-top: 15px;
+  color: #007bff;
+  font-size: 0.95rem;
 }
 
-.btn-copy:hover {
-  background: #1e7e34;
+/* Responsive */
+@media (min-width: 600px) {
+  .download-actions {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .download-btn,
+  .copy-btn {
+    font-size: 1.1rem;
+  }
 }
->>>>>>> 30e6733 (commit après mis a jour)
